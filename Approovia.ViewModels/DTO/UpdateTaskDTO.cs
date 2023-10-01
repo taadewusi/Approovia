@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 
 namespace Approovia.ViewModels.DTO
 {
-    public class TaskDTO
-    {       
+    public class UpdateTaskDTO
+    {
+        public Guid TaskId { get; set; }
 
         [Required(ErrorMessage = "Task name cannot be blank")]
         public string TaskName { get; set; }
@@ -20,7 +21,7 @@ namespace Approovia.ViewModels.DTO
         public DateTime StartDate { get; set; }
         [Required(ErrorMessage = "Task Allotted Time cannot be blank")]
         public int AllottedTime { get; set; }
-       
+
         [Required(ErrorMessage = "Task Elapsed Time cannot be blank")]
         public int ElapsedTime { get; set; }
         public bool TaskStatus { get; set; }

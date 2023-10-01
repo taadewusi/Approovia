@@ -9,6 +9,8 @@ namespace Approovia.ViewModels.Mappings
         public AutoMapping()
         {
             CreateMap<TaskList, TaskViewModel>().ReverseMap();
+            CreateMap<TaskList, TaskDTO>().ReverseMap();
+            CreateMap<TaskList, UpdateTaskDTO>().ReverseMap();
         }
     }
 }

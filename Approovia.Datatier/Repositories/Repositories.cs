@@ -42,6 +42,7 @@ namespace Approovia.Datatier.Repositories
         }
 
        
+
         public T GetById(Guid id)
         {
             return table.Find(id);
@@ -58,7 +59,6 @@ namespace Approovia.Datatier.Repositories
             _context.Entry(t).State = EntityState.Modified;
         }
 
-        
 
     }
 }

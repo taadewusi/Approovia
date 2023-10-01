@@ -14,8 +14,5 @@ namespace Approovia.ViewModels.ModelParameters
             OrderBy = "CreateDate";
         }
 
-        public string SearchTerm { get; set; }
-       
-        public string Name { get; set; }
     }
 }

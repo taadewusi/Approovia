@@ -12,8 +12,9 @@ namespace Approovia.ViewModels.Generics
         public const string ExceptionCommonWords = "unexpected character,object reference,exception occurred, sqlexception,ioexception,runtimeexception,index out of bound,index out of range,sql server";
 
 
-        public const string ExceptionCode = "11";
         public const string SuccessCode = "00";
+        public const string ExceptionCode = "11";
+        public const string ConflictCode = "22";        
         public const string NoData = "99";
     }
 }
